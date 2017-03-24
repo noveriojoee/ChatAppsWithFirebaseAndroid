@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ngobrol.cocomp.cocompchatapps.ChatRoomActivity">
+
+    <ListView
+        android:id="@+id/lvChatListMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1"
+        >
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7">
+        <EditText
+            android:id="@+id/tbChatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toLeftOf="@+id/btnSubmitMessage"
+            android:layout_toStartOf="@+id/btnSubmitMessage"
+            android:layout_alignParentBottom="true"
+            android:ems="10"
+            android:hint="Chat Here.."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnSubmitMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_alignParentBottom = "true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

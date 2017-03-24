@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngobrol.cocomp.cocompchatapps.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tbUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username here.."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tbPIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pin Here.."
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnJoinOnClick"
+        android:text="Join" />
+
+</LinearLayout>
